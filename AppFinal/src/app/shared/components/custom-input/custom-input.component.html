@@ -1,0 +1,15 @@
+<title>Bienvenido </title>
+<ion-item class="custom-input " >
+  <ion-icon  *ngIf="icon"   [name]="icon"></ion-icon>
+  <ion-input
+   [type]="type"
+   [label]="label" 
+   [autocomplete]="autocomplete" 
+   [formControl]="control" 
+   label-placement="floating"
+  ></ion-input>
+
+  <ion-button *ngIf="isclave"  (click)="OcultaroMostrarclave()" slot="end" fill="clear" shape="round">
+    <ion-icon  [name]="hide ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+  </ion-button>
+</ion-item>
